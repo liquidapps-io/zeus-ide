@@ -1,0 +1,17 @@
+image: liquidapps/zeus-ide:latest
+
+ports:
+- port: 8888
+  onOpen: ignore
+- port: 9876
+  onOpen: ignore
+- port: 13015
+  onOpen: ignore
+- port: 26030
+  onOpen: ignore
+
+tasks:
+- before: cleos wallet unlock --password </password
+  command: nodeos --config-dir ~/eosio/chain/config --data-dir ~/eosio/chain/data -e -p eosio --plugin eosio::chain_api_plugin --contracts-console
+- init: zeus unbox dapp; cd dapp; zeus compile; cd ..
+  command: cd dapp; zeus start-localenv
