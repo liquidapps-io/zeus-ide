@@ -6,7 +6,7 @@
             
 ```
 
-Start the Zeus IDE with [Gitpod](https://gitpod.io/#https://github.com/liquidapps-io/zeus-ide)
+Start the Zeus IDE with [Gitpod](https://ca27496f-0f03-4cb8-a045-6c6d82c95562.ws-us02.gitpod.io/#/workspace/zeus-ide)
 
 
 After your enviroment finishes loading in the editor, you can try:
