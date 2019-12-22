@@ -6,7 +6,7 @@
             
 ```
 
-Start the Zeus IDE with [Gitpod](https://gitpod.io/#https://github.com/tseyt/zeus-ide)
+Start the Zeus IDE with [Gitpod](https://gitpod.io/workspaces/)
 
 
 After your enviroment finishes loading in the editor, you can try:
