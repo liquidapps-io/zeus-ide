@@ -1,0 +1,91 @@
+.Login {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; }
+  .Login .logging-in {
+    pointer-events: all;
+  }
+  .Login:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transform: scale(10); }
+  .Login .logging-in {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px 50px;
+    width: 100%;
+    height: 50%;
+    background-color: #FFFFFF;
+    box-shadow: #020202 0pt 5pt 0pt;
+    border-radius: 18pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 125%;
+    font-weight: 500;
+    z-index: 1;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .Login .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .Login .description a {
+    font-weight: bolder;
+    text-decoration: underline;
+    color: #6464E4;
+    font-size: 15.5px;
+  }
+
+  .Login .field {
+    margin-bottom: 15px; }
+    .Login .field label {
+      color: #ffe4a9;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 2px black; }
+    .Login .field input {
+      margin: 5px 0;
+      width: 100%;
+      height: 42px;
+      border-radius: 10pt;
+      background-color: #F0F0F0;
+      letter-spacing: 3px;
+      /* https://stackoverflow.com/a/37432260 */ }
+      .Login .field input::placeholder {
+        color: #666;
+        letter-spacing: 2px; }
+  .Login .form-error {
+    height: 1em;
+    font-size: 14.5px;
+    white-space: nowrap;
+    overflow: hidden; }
+    .Login .form-error .error {
+      width: 100%;
+      color: #ff5400;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: inline-block; }
+  .Login .bottom {
+    margin-top: -25px;
+    text-align: center; }
+    .Login .bottom .login-button {
+        background-color: #A9E886;
+        box-shadow: #285422 0pt 5pt 0pt;
+        border-radius: 18pt;
+        font-weight: 500;
+        font-size: 16pt;
+        width: 50%;
+        height: 32pt;
+        color: #ffffff; 
+    }
+

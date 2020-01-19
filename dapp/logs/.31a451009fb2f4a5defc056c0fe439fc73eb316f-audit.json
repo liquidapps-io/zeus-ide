@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 5
+    },
+    "auditLog": "logs/.31a451009fb2f4a5defc056c0fe439fc73eb316f-audit.json",
+    "files": [
+        {
+            "date": 1579445636707,
+            "name": "logs/pprovider1-storage-dapp-service-node-2020-01-19.log",
+            "hash": "e48fedd3554d113b675aa99724e1b6c4"
+        }
+    ]
+}

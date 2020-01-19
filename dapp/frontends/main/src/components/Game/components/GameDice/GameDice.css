@@ -1,0 +1,42 @@
+.GameDice {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  }
+  .GameDice > tr {
+    width: 100%;
+    height: 20%;
+  }
+  .GameDice .dice-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    padding-left: 67pt;
+    padding-top: 22pt;
+    padding-right: 66pt;
+  }
+
+.Dice {
+  position: relative;
+  margin: 0 8px;
+  width: 70px;
+  height: 70px;
+  background-size: 100%;
+  border-radius: 8px;
+  color: #000;
+  font-size: 55px;
+  text-align: center;
+  display: inline-block; }
+  .Dice.dice1 {
+    background-image: url("./images/dice1.png"); }
+  .Dice.dice2 {
+    background-image: url("./images/dice2.png"); }
+  .Dice.dice3 {
+    background-image: url("./images/dice3.png"); }
+  .Dice.dice4 {
+    background-image: url("./images/dice4.png"); }
+  .Dice.dice5 {
+    background-image: url("./images/dice5.png"); }
+  .Dice.dice6 {
+    background-image: url("./images/dice6.png"); }
