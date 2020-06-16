@@ -13,5 +13,5 @@ ports:
 tasks:
 - before: cleos wallet unlock --password </password
   command: nodeos --config-dir ~/eosio/chain/config --data-dir ~/eosio/chain/data -e -p eosio --plugin eosio::chain_api_plugin --contracts-console
-- init: mkdir dapp; cd dapp; zeus box create; zeus unbox dapp; cd ..
+- init: mv /home/gitpod/dapp /workspace/zeus-ide/dapp
   command: cd dapp; zeus start-localenv
