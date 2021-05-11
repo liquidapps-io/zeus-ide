@@ -8,10 +8,12 @@
 
 Start the Zeus IDE with [Gitpod](https://gitpod.io/#https://github.com/liquidapps-io/zeus-ide)
 
+Zeus is creating `mycontract.cpp` and `mycontract.spec.js` compiling and running an example unit test.  This is a basic smart contract, to create a smart contract with all of the DAPP Network service includes run:
 
-After your enviroment finishes loading in the editor, you can try:
 ```bash
-zeus create contract mycontract
-# edit your contract under dapp/contracts/eos/mycontract
+cd /workspace/zeus-ide
+mkdir all-dapp-services; cd all-dapp-services
+zeus box create
+zeus unbox all-dapp-services
 zeus test -c
 ```
