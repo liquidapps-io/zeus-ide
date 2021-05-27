@@ -9,9 +9,15 @@ ports:
   onOpen: ignore
 - port: 26030
   onOpen: ignore
+- port: 2424
+  onOpen: ignore
+- port: 12451
+  onOpen: ignore
+- port: 13016
+  onOpen: ignore
 
 tasks:
 - before: cleos wallet unlock --password </password
   command: nodeos --config-dir ~/eosio/chain/config --data-dir ~/eosio/chain/data -e -p eosio --plugin eosio::chain_api_plugin --contracts-console
 - init: mv /home/gitpod/example-contract /workspace/zeus-ide/example-contract
-  command: cd example-contract; zeus create contract example-contract; zeus test example-contract -c
+  command: cd example-contract; zeus create contract example-contract --template simplecontract; zeus test example-contract -c
