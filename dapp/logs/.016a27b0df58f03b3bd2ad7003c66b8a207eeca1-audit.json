@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 5
+    },
+    "auditLog": "logs/.016a27b0df58f03b3bd2ad7003c66b8a207eeca1-audit.json",
+    "files": [
+        {
+            "date": 1579445552539,
+            "name": "logs/pprovider1-demux-2020-01-19.log",
+            "hash": "49d4f660e21084b2b642e16403031d30"
+        }
+    ]
+}

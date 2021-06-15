@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 5
+    },
+    "auditLog": "logs/.51032b493abf47bd0e8394e4cd26cfdb3d708a75-audit.json",
+    "files": [
+        {
+            "date": 1579445577236,
+            "name": "logs/pprovider2-cron-dapp-service-node-2020-01-19.log",
+            "hash": "211c44ac13af232b96a88ab808506abf"
+        }
+    ]
+}

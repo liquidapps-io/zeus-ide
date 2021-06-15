@@ -6,7 +6,7 @@
             
 ```
 
-Start the Zeus IDE with [Gitpod](https://gitpod.io/#https://github.com/liquidapps-io/zeus-ide)
+Start the Zeus IDE with [Gitpod](https://gitpod.io/workspaces/)
 
 Documentation: [http://liquidapps.gitbook.io/](http://liquidapps.gitbook.io/)
 

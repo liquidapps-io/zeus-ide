@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 5
+    },
+    "auditLog": "logs/.d7bf04e7b61e792c8b9b65a3db0528eb0391eac2-audit.json",
+    "files": [
+        {
+            "date": 1579445601336,
+            "name": "logs/pprovider1-ipfs-dapp-service-node-2020-01-19.log",
+            "hash": "59f6db01d92eac90fa201df6842c2667"
+        }
+    ]
+}

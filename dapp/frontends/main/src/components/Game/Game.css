@@ -1,0 +1,127 @@
+.Game {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("./images/Game_background.png") center no-repeat;
+  background-size: 100%;
+  border-collapse: collapse; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transform-origin: top left;
+  transition: all 250ms ease-in-out !important; }
+  .Game .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center; }
+  body.ReactModal__Body--open .Game .GameMat,
+  body.ReactModal__Body--open .Game .Info,
+  .App.status-card-selected .Game .GameMat,
+  .App.status-card-selected .Game .Info,
+  .App.status-game-ended .Game .GameMat,
+  .App.status-game-ended .Game .Info {
+    filter: blur(3px); }
+  .Game .spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    animation: dim 1s normal forwards ease .5s; }
+
+  .game-info {
+    width: 100%;
+    height: 48pt;
+    font-size: 16pt;
+    background-color: #D8F3CE;
+    position: relative;
+    top: 100pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .game-info > div {
+    padding-top: 15pt;
+    padding-bottom: 14pt;
+    padding-left: 26pt;
+    padding-right: 19pt;
+  }
+  
+  div .numbers {
+    display: inline-block;
+    font-weight: 300;
+    
+  }
+  .rollbutton, .leaveButton, .resumeButton {
+    background-color: #A9E886;
+    box-shadow: #285422 0pt 5pt 0pt;
+    border-radius: 25pt;
+    font-weight: 500;
+    font-size: 20pt;
+    width: 100pt;
+    height: 50pt;
+    color: #ffffff;
+  }
+  .leaveButton {
+    background-color: #E88686;
+    box-shadow: #844141 0pt 5pt 0pt;
+    top: 80pt;
+  }
+
+@keyframes dim {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+    .Game .spinner .image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -49px;
+      margin-left: -49px;
+      width: 98px;
+      height: 98px;
+      background: url("./images/logo_loading.png");
+      background-size: 100%; }
+    .Game .spinner .circles {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -50px;
+      margin-left: -51px;
+      width: 100px;
+      height: 102px;
+      animation: spin 1s infinite linear; }
+    .Game .spinner .circle {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+      .Game .spinner .circle .inner {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        border: 3px solid rgba(255, 201, 79, 0.3);
+        border-right: none;
+        border-top: none;
+        background-clip: padding;
+        box-shadow: inset 0px 0px 10px rgba(255, 255, 134, 0.17); }
+    .Game .spinner .circle:nth-of-type(0) .inner,
+    .Game .spinner .circle:nth-of-type(1) .inner,
+    .Game .spinner .circle:nth-of-type(2) .inner {
+      animation: spin 1s infinite linear; }
+    .Game .spinner .circle:nth-of-type(0) {
+      transform: rotate(0deg); }
+    .Game .spinner .circle:nth-of-type(1) {
+      transform: rotate(70deg); }
+    .Game .spinner .circle:nth-of-type(2) {
+      transform: rotate(140deg); }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
